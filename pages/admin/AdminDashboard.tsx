@@ -3,7 +3,7 @@ import { Layout } from '../../components/Layout';
 import { Button } from '../../components/Button';
 import { useSystem } from '../../context/SystemContext';
 import { Service, Counter, User, UserRole, TokenStatus, Token } from '../../types';
-import { Trash2, Plus, Shield, Settings, Users, Monitor, Edit2, Search, History, Filter, ArrowUp, ArrowDown, ArrowUpDown, Calendar, Hash, Phone, User as UserIcon, Check, X, CheckSquare, Square } from 'lucide-react';
+import { Trash2, Plus, Shield, Settings, Users, Monitor, Edit2, Search, History, Filter, ArrowUp, ArrowDown, ArrowUpDown, Calendar, Hash, Phone, User as UserIcon, Check } from 'lucide-react';
 
 export const AdminDashboard: React.FC = () => {
   const { 
@@ -99,7 +99,7 @@ export const AdminDashboard: React.FC = () => {
 
   const handleSaveCounter = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (counterFormState.assignedServiceIds.length === 0) {
       if (!window.confirm("This counter has no services assigned. It won't be able to serve any customers. Continue?")) {
         return;
