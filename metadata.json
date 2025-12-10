@@ -1,0 +1,5 @@
+{
+  "name": "QFlow - Intelligent Queue System",
+  "description": "A production-ready, real-time queue management system simulation with Customer, Operator, and Kiosk interfaces. Features cross-tab synchronization to simulate real-time backend updates.",
+  "requestFramePermissions": []
+}
